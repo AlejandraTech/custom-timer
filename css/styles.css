@@ -1,0 +1,142 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: #4a4a4a;
+}
+
+h2 {
+  color: #4a4a4a;
+}
+
+.title {
+  padding-bottom: 20px;
+}
+
+/* Main styles */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Container styles */
+.container {
+  margin-top: 1.25rem;
+  padding: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Form styles */
+#task-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#task-form input[type="text"],
+#task-form input[type="number"],
+#task-form button {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#task-form button {
+  background-color: #6dbad8;
+  color: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 600px) {
+  #task-form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #task-form input[type="text"],
+  #task-form input[type="number"] {
+    width: calc(50% - 5px);
+  }
+
+  #task-form button {
+    width: calc(50% - 5px);
+  }
+}
+
+/* Task list styles */
+#task-list {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#task-list div {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#task-list div button {
+  background-color: #6dbad8;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#task-list div button:hover {
+  background-color: #4d8ca2;
+  transition: background-color 0.3s ease;
+}
+
+/* Timer styles */
+#timer-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#timer {
+  display: none;
+  font-size: 36px;
+  font-weight: bold;
+  background-color: #6dbad8;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}

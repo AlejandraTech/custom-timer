@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Timer</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Custom Timer</h1>
+    </header>
+
+    <main>
+      <div class="container">
+        <form id="task-form">
+          <input type="text" id="task-input" placeholder="Enter task" />
+          <input type="number" id="hours-input" placeholder="Hours" />
+          <input type="number" id="minutes-input" placeholder="Minutes" />
+          <input type="number" id="seconds-input" placeholder="Seconds" />
+          <button type="submit">Add Task</button>
+        </form>
+      </div>
+
+      <div class="container">
+        <h2 class="title">Temporizador</h2>
+        <div id="timer-container">
+          <div id="timer"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2 class="title">Lista de tareas pendientes</h2>
+        <div id="task-list"></div>
+      </div>
+    </main>
+
+    <script src="js/tasks.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
